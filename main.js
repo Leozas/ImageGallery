@@ -24,9 +24,7 @@ function displayImage(imgSrc) {
 
 /* Wiring up the Darken/Lighten button */
 
-btn.onclick = DarkenOrLighten()
-
-function DarkenOrLighten() {
+btn.onclick = function DarkenOrLighten() {
   var btnClass = btn.getAttribute('class');
   if(btnClass === 'dark') {
     btn.setAttribute('class','light');
