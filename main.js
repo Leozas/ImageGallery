@@ -23,6 +23,8 @@ function displayImage(imgSrc) {
 }
 
 /* Wiring up the Darken/Lighten button */
+btn.setAttribute('class', btn);
+btn.textContent = 'Darken';
 
 btn.onclick = function DarkenOrLighten() {
   var btnClass = btn.getAttribute('class');
